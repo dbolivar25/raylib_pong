@@ -1,3 +1,0 @@
-/Users/danielbolivar/CS2201/pong/CMakeFiles/pong.dir
-/Users/danielbolivar/CS2201/pong/CMakeFiles/edit_cache.dir
-/Users/danielbolivar/CS2201/pong/CMakeFiles/rebuild_cache.dir
