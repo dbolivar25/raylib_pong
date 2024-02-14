@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/danielbolivar/CLionProjects/raylib_pong
+CMAKE_SOURCE_DIR = /Users/danielbolivar/CLionProjects/raylib_pong/build/_deps/raylib-subbuild
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/danielbolivar/CLionProjects/raylib_pong/build
+CMAKE_BINARY_DIR = /Users/danielbolivar/CLionProjects/raylib_pong/build/_deps/raylib-subbuild
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbolivar/CLionProjects/raylib_pong/build/CMakeFiles /Users/danielbolivar/CLionProjects/raylib_pong/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbolivar/CLionProjects/raylib_pong/build/_deps/raylib-subbuild/CMakeFiles /Users/danielbolivar/CLionProjects/raylib_pong/build/_deps/raylib-subbuild//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbolivar/CLionProjects/raylib_pong/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbolivar/CLionProjects/raylib_pong/build/_deps/raylib-subbuild/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,41 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named pong
+# Target rules for targets named raylib-populate
 
 # Build rule for target.
-pong: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pong
-.PHONY : pong
+raylib-populate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 raylib-populate
+.PHONY : raylib-populate
 
 # fast build rule for target.
-pong/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pong.dir/build.make CMakeFiles/pong.dir/build
-.PHONY : pong/fast
-
-main.o: main.cpp.o
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pong.dir/build.make CMakeFiles/pong.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pong.dir/build.make CMakeFiles/pong.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pong.dir/build.make CMakeFiles/pong.dir/main.cpp.s
-.PHONY : main.cpp.s
+raylib-populate/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib-populate.dir/build.make CMakeFiles/raylib-populate.dir/build
+.PHONY : raylib-populate/fast
 
 # Help Target
 help:
@@ -161,10 +137,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... pong"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... raylib-populate"
 .PHONY : help
 
 

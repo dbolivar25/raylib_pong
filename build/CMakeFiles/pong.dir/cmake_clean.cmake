@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/Users/danielbolivar/CS2201/pong/pong"
-  "/Users/danielbolivar/CS2201/pong/pong.pdb"
+  "/Users/danielbolivar/CLionProjects/raylib_pong/bin/pong"
+  "/Users/danielbolivar/CLionProjects/raylib_pong/bin/pong.pdb"
   "CMakeFiles/pong.dir/main.cpp.o"
   "CMakeFiles/pong.dir/main.cpp.o.d"
 )
